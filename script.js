@@ -11,7 +11,10 @@
 		"Why is butter flying?",
 		"Dog vs. God",
 		"Butterflies taste with their feet",
-		"'Borolas' is a good name for a dog"
+		"'Borolas' is a good name for a dog",
+		"The Secret of Life is Within",
+		"Who invented this game?",
+		"That dog knows a thing or two about Love"
 	]
 
 	const WINNINGCOMB = [
