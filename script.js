@@ -88,8 +88,8 @@ function render() {
 
 function renderBoard() {
 	board.forEach(function(cell, idx) {
-		const element = document.getElementById(idx);
-		if (cell != null && grid.includes(element)) {
+		if (cell != null) {
+			const element = document.getElementById(idx);
 			element.innerHTML = PLAYERS[board[idx]];
 		}
 	})
