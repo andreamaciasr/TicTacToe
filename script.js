@@ -1,7 +1,7 @@
 /*----- constants -----*/
 const PLAYERS = {
-	O: "./img/O-tic.png",
-	X: "./img/X-tic.png",
+	O: '<img src="./img/O-tic.png" style="width: 80%; height: 80%;">',
+	X: '<img src="./img/X-tic.png" style="width: 80%; height: 80%;">',
 }
 
 const MESSAGES = [
@@ -88,14 +88,9 @@ function render() {
 
 function renderBoard() {
 	board.forEach(function(cell, idx) {
-		let element = document.getElementById(idx);
-		element.innerHTML = "";
+		const element = document.getElementById(idx);
 		if (cell != null && grid.includes(element)) {
-			let imgElement = document.createElement('img');
-			imgElement.style.width = '80%';
-			imgElement.style.height = '80%';
-			imgElement.src = PLAYERS[board[idx]];
-			element.appendChild(imgElement);
+			element.innerHTML = PLAYERS[board[idx]];
 		}
 	})
 }
